@@ -2,7 +2,7 @@ var btnLogin = document.getElementById('btnLogin')
 var txtUser = document.getElementById('txtUser')
 var txtSenha = document.getElementById('txtSenha')
 
-//dsdsd
+
 
 
 btnLogin.addEventListener('click', function () {
