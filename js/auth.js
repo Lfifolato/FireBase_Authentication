@@ -3,8 +3,6 @@ var txtUser = document.getElementById('txtUser')
 var txtSenha = document.getElementById('txtSenha')
 
 
-
-
 btnLogin.addEventListener('click', function () {
 
    firebase.auth().signInWithEmailAndPassword(txtUser.value, txtSenha.value).then(function (result) {
@@ -27,3 +25,4 @@ btnLogin.addEventListener('click', function () {
    });
 
 });
+
