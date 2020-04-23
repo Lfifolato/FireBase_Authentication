@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
    <title>Castro</title>
@@ -12,35 +12,112 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
+<style>
+   body {
+
+      background-color: rgba(192, 191, 191, 0.555);
+
+   }
+</style>
+
 <body>
+
+   <script src="../js/CepApi.js"></script>
 
    <div class="container">
 
+      <center>
+
+         <div class="row">
+
+            <h3>Cadastros <img src="../img/logo02.png" width="110px" class="img-thumbnail"></h3>
+
+         </div>
+
+      </center>
       <div class="row" style="text-align: center;">
+
 
          <div class="col-md-4">
 
-            <label>Nome: </label>
-            <input type="text" maxlength="40" id="txtNome" class="form-control-file">
+            <label>Nome </label>
+            <input type="text" maxlength="40" id="txtNome" class="form-control-file" value="">
 
 
          </div>
 
          <div class="col-md-4">
 
-            <label>E-mail: </label>
+            <label>E-mail </label>
             <input type="email" maxlength="40" id="txtUser" class="form-control-file">
 
          </div>
 
          <div class="col-md-4">
 
-            <label>Senha: </label>
+            <label>Senha </label>
             <input type="password" maxlength="40" id="txtSenha" class="form-control-file">
 
          </div>
 
       </div>
+
+      <div class="row" style="margin-top: 25px;">
+
+         <div class="col-md-3">
+
+
+            <label>Cep </label>
+
+            <input class="form-control-file" name="Cep" maxlength="9" id="txtCep" type="text" value=""
+               onblur="pesquisacep(this.value);">
+
+         </div>
+
+
+
+         <div class="col-md-2">
+
+            <label>Número </label>
+            <input type="text" name="Numero" id="txtNumero" class="form-control-file">
+
+         </div>
+
+         <div class="col-md-2">
+
+            <label>Estado </label>
+            <input type="text" name="Numero" id="txtEstado" class="form-control-file">
+
+         </div>
+
+         <div class="col-md-5">
+
+            <label>Cidade</label>
+            <input type="text" name="Cidade" id="txtCidade" class="form-control-file">
+
+         </div>
+
+      </div>
+
+      <div class="row" style="margin-top: 25px;">
+
+         <div class="col-md-6">
+
+            <label>Logradouro</label>
+            <input type="text" name="Logradouro" id="txtLogradouro" class="form-control-file">
+
+         </div>
+
+         <div class="col-md-6">
+
+            <label>Bairro</label>
+            <input type="text" name="Bairro" id="txtBairro" class="form-control-file">
+
+         </div>
+
+
+      </div>
+
 
       <br>
       <br>
@@ -66,9 +143,9 @@ Script FireBase
 
    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase.js"></script>
 
-   <script src="./js/config.js"></script>
+   <script src="../js/config.js"></script>
 
-   <script src="./js/create.js"></script>
+   <script src="../js/create.js"></script>
 
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

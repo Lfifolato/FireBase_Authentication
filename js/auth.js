@@ -8,7 +8,7 @@ btnLogin.addEventListener('click', function () {
    firebase.auth().signInWithEmailAndPassword(txtUser.value, txtSenha.value).then(function (result) {
 
       console.log("Success!");
-      window.location.replace('navbar.html');
+      window.location.replace('./page/navbar.html');
 
    }).catch(function (error) {
       // Handle Errors here.
